@@ -119,4 +119,18 @@ main {
 .btnVermelho{
     background-color:rgb(128, 0, 0);
     color: aliceblue;
+    float: right;
+    
+}
+
+.btnVermelho:hover{
+    background-color:rgb(158, 9, 9);
+    color: aliceblue;
+    
+    
+}
+
+.labeltxt{
+    margin-top: 10px;
+    margin-bottom: 30px;
 }

@@ -1,7 +1,8 @@
-const textbox = document.querySelectorAll("[data-item]");
+const textbox = document.querySelectorAll("[data-txt]");
 
-botoes.forEach((elemento) =>{
-    elemento.addEventListener("click",(evento)=>{
+textbox.forEach((elemento) =>{
+    elemento.addEventListener("blur",(evento)=>{
+        console.log(evento);
         atualizaItem(evento.target.textContent,(evento.target.parentNode));
     })
     
@@ -11,10 +12,8 @@ botoes.forEach((elemento) =>{
 
 
 function atualizaItem(acao, inputQtde){
-    const item = inputQtde.querySelector("[data-qtde]");
-    if(acao==="-"){
-        item.value = parseInt(item.value) -1;
-    } else{
-        item.value = parseInt(item.value) +1;
+    const item = inputQtde.querySelector("[data-txt]");
+    if(acao===""){
+        item.value = "texto invalido";
     }
 }
