@@ -13,7 +13,8 @@ textbox.forEach((elemento) =>{
 
 function atualizaItem(acao, inputQtde){
     const item = inputQtde.querySelector("[data-txt]");
-    if(acao.includes('@') === false){
+    var str = item.value;
+    if(str.includes('@') === false){
         item.value = "texto invalido";
     }
 }
