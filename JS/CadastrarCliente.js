@@ -1,6 +1,7 @@
-const textbox = document.querySelectorAll("[data-txt]");
+const inputs = document.querySelectorAll("[required]");
 
-textbox.forEach((elemento) =>{
+
+inputs.forEach((elemento) =>{
     elemento.addEventListener("blur",(evento)=>{
         console.log(evento);
         atualizaItem(evento.target.textContent,(evento.target.parentNode));
@@ -11,10 +12,10 @@ textbox.forEach((elemento) =>{
 
 
 
-function atualizaItem(acao, inputQtde){
-    const item = inputQtde.querySelector("[data-txt]");
+/*function atualizaItem(acao, inputQtde){
+    const item = inputQtde.querySelector("[required]");
     var str = item.value;
     if(str.includes('@') === false){
         item.value = "texto invalido";
     }
-}
+}*/
