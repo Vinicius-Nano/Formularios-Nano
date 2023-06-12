@@ -64,6 +64,7 @@ main {
     padding: 20px;
     background-color: rgba(128, 0, 0, 0.5);
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .footer .corpoFooter {
@@ -71,15 +72,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
     text-align: justify;
-    margin: 0 auto;
-}
-
-.corpoFooter .atendimento {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
 }
 
 .imagesft img{

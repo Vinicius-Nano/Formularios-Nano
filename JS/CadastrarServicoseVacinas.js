@@ -129,14 +129,6 @@ function validaCampo(campo) {
              break
 
              case 'quant':
-     
-             if(campo.value < 1) {
-                msnErro.textContent = "Digite a quantidade(estoque)/aplicações disponiveis do serviço!";
-            }
-            else {
-                msnErro.textContent = "";
-                
-            }
     
         }
  
