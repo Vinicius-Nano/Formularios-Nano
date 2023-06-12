@@ -31,55 +31,71 @@
 
             <div class="row g-3">
                 <div class="col">
-                    <label for="peso" class="form-label">NOME</label>
-                  <input type="text" class="form-control labeltxt" placeholder="" 
-                  aria-label="Peso" name="peso" id="peso" data-txt="">
+                    <label for="nome" class="form-label labeltxt">NOME</label>
+                  <input type="text" class="form-control " placeholder="" 
+                  aria-label="nome" name="nome" id="nome" data-txt="" required  minlength="15" maxlength="300" >
+                  <span class = "mensagem-erro" data-erro></span>
+                
                 </div>
 
                 <div class="col">
-                    <label for="peso" class="form-label">FABRICANTE</label>
-                  <input type="text" class="form-control labeltxt" placeholder="" 
-                  aria-label="Peso" name="peso" id="peso" data-txt="">
+                    <label for="fabricante" class="form-label labeltxt">FABRICANTE</label>
+                  <input type="text" class="form-control" placeholder="" 
+                  aria-label="fabricante" name="fabricante" id="fabricante" data-txt="" required minlength="15" maxlength="300">
+                  <span class = "mensagem-erro" data-erro></span>
+               
                 </div>
               </div>
              <div class="row g-3">
                 <div class="col">
-                    <label for="peso" class="form-label">DURAÇÃO</label>
-                  <input type="text" class="form-control labeltxt" placeholder="" 
-                  aria-label="Peso" name="peso" id="peso" data-txt="">
+                    <label for="duração" class="form-label labeltxt">DURAÇÃO</label>
+                  <input type="text" class="form-control " placeholder="" 
+                  aria-label="duracao" name="duracao" id="duracao" data-txt="" required minlength="8" maxlength="10">
+                  <span class = "mensagem-erro" data-erro></span>
+                
                 </div>
 
                 <div class="col">
-                    <label for="peso" class="form-label">VALOR</label>
-                  <input type="text" class="form-control labeltxt" placeholder="" 
-                  aria-label="Peso" name="peso" id="peso" data-txt="">
+                    <label for="valor" class="form-label labeltxt">VALOR</label>
+                  <input type="text" class="form-control " placeholder="" 
+                  aria-label="valor" name="valor" id="valor" data-txt="" required required minlength="7" maxlength="12">
+                  <span class = "mensagem-erro" data-erro></span>
+               
                 </div>
               </div>
               <div class="row g-3">
                 <div class="col">
-                    <label for="peso" class="form-label">TIPO</label>
-                  <input type="text" class="form-control labeltxt" placeholder="" 
-                  aria-label="Peso" name="peso" id="peso" data-txt="">
+                    <label for="tipo" class="form-label labeltxt">TIPO</label>
+                  <input type="text" class="form-control " placeholder="EX.: Exame" 
+                  aria-label="tipo" name="tipo" id="tipo" data-txt="" required required minlength="8" maxlength="100">
+                  <span class = "mensagem-erro" data-erro></span>
+                
                 </div>
 
                 <div class="col">
-                    <label for="peso" class="form-label">LOCAL DE APLICAÇÃO</label>
-                  <input type="text" class="form-control labeltxt" placeholder="" 
-                  aria-label="Peso" name="peso" id="peso" data-txt="">
+                    <label for="local" class="form-label labeltxt">LOCAL DE APLICAÇÃO</label>
+                  <input type="text" class="form-control " placeholder="Ex.: Domicilio" 
+                  aria-label="local" name="local" id="local" data-txt="" required required minlength="4" maxlength="50">
+                  <span class = "mensagem-erro" data-erro></span>
+                
                 </div>               
               </div>
 
               <div class="row g-3">
                 <div class="col">
-                    <label for="peso" class="form-label">PROFISSIONAL APLICADOR</label>
-                  <input type="text" class="form-control labeltxt" placeholder="" 
-                  aria-label="Peso" name="peso" id="peso" data-txt="">
+                    <label for="profissional" class="form-label labeltxt">PROFISSIONAL APLICADOR</label>
+                  <input type="text" class="form-control " placeholder="" 
+                  aria-label="profissional" name="profissional" id="profissional" data-txt="" required required minlength="6" maxlength="50">
+                  <span class = "mensagem-erro" data-erro></span>
+                
                 </div>
 
                 <div class="col">
-                    <label for="peso" class="form-label">QUANTIDADE/APLICAÇÕES DISPONIVEIS</label>
-                  <input type="text" class="form-control labeltxt" placeholder="" 
-                  aria-label="Peso" name="peso" id="peso" data-txt="">
+                    <label for="quant" class="form-label labeltxt">QUANTIDADE/APLICAÇÕES DISPONIVEIS</label>
+                  <input type="number" min="0" max="200" class="form-control" placeholder="" 
+                  aria-label="quant" name="quant" id="quant" data-txt="" required >
+                  <span class = "mensagem-erro" data-erro></span>
+        
                 </div>
                 </div>
 
@@ -91,7 +107,7 @@
                     </div>
 
                     <div class="col">
-                      <button type="button" id="btnCalcular"
+                      <button type="submit" id="btnCalcular"
                       class="btn btnVermelho">SALVAR</button>
                   </div>
                 </div>
