@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/cssgeral.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="home">
@@ -66,7 +67,7 @@
               <div class="row g-3">
                 <div class="col">
                     <label for="tipo" class="form-label labeltxt">TIPO</label>
-                  <input type="text" class="form-control " placeholder="EX.: Exame" 
+                  <input type="text" class="form-control " placeholder="Ex.: Exame" 
                   aria-label="tipo" name="tipo" id="tipo" data-txt="" required required minlength="8" maxlength="100">
                   <span class = "mensagem-erro" data-erro></span>
                 
@@ -91,9 +92,9 @@
                 </div>
 
                 <div class="col">
-                    <label for="quant" class="form-label labeltxt">QUANTIDADE/APLICAÇÕES DISPONIVEIS</label>
+                    <label for="quant" class="form-label labeltxt">QUANTIDADE/APLICAÇÕES DISPONIVEÍS</label>
                   <input type="number" min="0" max="200" class="form-control" placeholder="" 
-                  aria-label="quant" name="quant" id="quant" data-txt="" required >
+                  aria-label="quant" name="quant" id="quant" value="0" data-txt="" required >
                   <span class = "mensagem-erro" data-erro></span>
         
                 </div>
@@ -115,6 +116,29 @@
               
               </form>
            </main>
+
+           <footer class="footer">
+            <div class="corpoFooter">
+                <div class="texto">
+                    <h3>Entre em contato conosco! (69) 3456-7890</h3>
+                    <h5>Atendimento das 08h00 às 22h00, todos os dias da semana </h5>
+                </div>
+    
+                <div class="imagesft">
+                    <img src="imagens/iconetelefone.png" alt="#">
+                </div>
+    
+                <div class="imagesft2">
+    
+                    <h3>Nos encontre em nossas redes sociais!</h3>
+    
+                    <img src="imagens/iconefacebook.png" alt="#">
+                    <img src="imagens/iconeinstagram.png" alt="#">
+                    <img src="imagens/iconetwitter.png" alt="#">
+                    <img src="imagens/iconeyoutube.png" alt="#">
+                </div>
+            </div>
+        </footer>
 </body>
 <script src="JS/CadastrarServicoseVacinas.js"></script>
 </html>
