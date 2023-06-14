@@ -18,7 +18,7 @@ inputs.forEach((elemento) =>{
 
 
 
-botao.addEventListener("click", (evento) =>{
+botao.addEventListener("click",(evento)=>{
       
     if(valida === 1){
         evento.preventDefault();
