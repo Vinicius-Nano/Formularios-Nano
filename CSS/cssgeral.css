@@ -3,11 +3,13 @@ body {
     padding: 0px;
     margin: 0 auto;
     background-color: #eeeeee;
+    
 }
 
-main {
-    width: 900px;
+.main {
+    width: 1000px;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .cabecalho {
@@ -18,7 +20,7 @@ main {
 }
 
 .cabecalho .home {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -39,7 +41,7 @@ main {
 .topnav .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 900px;
     margin: 0 auto;
 }
@@ -63,49 +65,56 @@ main {
 .footer {
     padding: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: row wrap;
+    justify-content: center;
     background-color: rgba(128, 0, 0, 0.5);
     
-    margin-top: 30px;
+
 
  
 }
 
 .corpoFooter {
-    width: max-content;
-
+    width: 1000px;
+    align-self: center;
+    align-content: center;
     display: flex;
     flex-flow: row;
+    column-gap: 30px;
+
  
 }
 
 .colunaEsquerda {
   
-    width: 600px;
+    width: 485px;
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
     text-align: center;
+    align-items: center;
     
 }
 
 .colunaDireita{
-    width: 400px;
+    width: 485px;
+    justify-content: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap ;
     text-align: center;
+    align-items: center;
+    
 }
 
-.imagesft{
-    width: 50px;
-    height: 50px; 
-    margin-right: 10px;
+.imagesft{ 
+    margin-right: 5px;
+    align-self: first baseline;
 
     
 }
 .imagesft img{
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
 }
 
 .texto {
@@ -123,10 +132,7 @@ main {
   /* flex-flow: row
     justify-content: center;*/
     display: flex;
-    width: 400px;
-    justify-content: center;
-    column-gap: 10px;
-
+    column-gap: 30px;
 }
 
 
